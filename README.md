@@ -1,7 +1,7 @@
 As we all know huawei is releasing more and more devices with harmonyos next (openharmony / harmony os 5+) which means more possibilities for engineering or unlocked test devices.
 As we also know this means no more ADB / Fastboot instead huawei now uses HDC (Huawei Device Connect) and trying to find out how to use it is not exactly easy therefore i am sharing some commands and other things.
--
--
+##
+##
 Warnings:
 -
 Any set of commands that start with "hdc smode root" require the devices firmware to be userdebug which means they will NOT work with "non-debuggable" firmware.
