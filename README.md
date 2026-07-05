@@ -7,7 +7,8 @@ The "Dump all parts.bat" file only dumps the parts that show as a result of "ls 
 ##
 ##
 Things to note: </p>
-There is no dedicated partition dump command, the best you can get is dd pulling the images into /data and using file recv to pull them onto the pc however from testing some of these images are just full of 0's.
+There is no dedicated partition dump command, the best you can get is dd pulling the images into /data and using file recv to pull them onto the pc however from testing some of these images are just full of 0's. </p>
+To use the ".bat" files place them in the folder with "HDC.exe" and run.
 ##
 ##
 ##
