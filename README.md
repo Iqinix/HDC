@@ -16,12 +16,12 @@ There is no dedicated partition dump command, the best you can get is dd pulling
 -
 -
 reboot to mode:
-hdc target boot -*mode*
+hdc target boot -[mode]
 -
 -
 pull partition:
 hdc smode root
-hdc file recv /dev/block/by-name/*part* *part*.img
+hdc file recv /dev/block/by-name/[part] [part].img
 or
 hdc smode root
 hdc shell dd if=/dev/block/sd(d/c) of=/data/*partname*.img
