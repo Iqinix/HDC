@@ -24,8 +24,8 @@ hdc smode root
 hdc file recv /dev/block/by-name/[part] [part].img
 or
 hdc smode root
-hdc shell dd if=/dev/block/sd(d/c) of=/data/*partname*.img
-hdc file recv /data/*partname*.img
+hdc shell dd if=/dev/block/sd(d/c) of=/data/[partname].img
+hdc file recv /data/[partname].img
 -
 -
 move a file inside the phone:
@@ -41,7 +41,7 @@ mount -o remount,rw /sys_prod
 dd if=/sys_prod/etc/param/hw_defaults.para of=/data/hw_defaults.para
 exit
 hdc fille recv /data/hw_defaults.para
-**edit "hw_defaults.para" and change "const.product.hide = true" to false
+[[edit "hw_defaults.para" and change "const.product.hide = true" to false]]
 hdc file send /path/to/editted.para /sts_prod/etc/param
 -
 -
