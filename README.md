@@ -4,6 +4,7 @@ As we also know this means no more ADB / Fastboot instead huawei now uses HDC (H
 Warnings: </p>
 Any set of commands that start with "hdc smode root" require the devices firmware to be userdebug which means they will NOT work with "non-debuggable" firmware. </p>
 The "Dump all parts.bat" file only dumps the parts that show as a result of "ls -l /dev/block/by-name" therefore some partitions such as xloader and probably some others wont be dumped. </p>
+If your planning on doing a command that involves pulling, editting and pushing a system file i would reccommend making a backup of the original. </p>
 ##
 ##
 Things to note: </p>
