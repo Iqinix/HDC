@@ -23,32 +23,32 @@ or </p>
 hdc smode root </p>
 hdc shell dd if=/dev/block/sd(d/c) of=/data/[partname].img </p>
 hdc file recv /data/[partname].img </p>
--
--
-move a file inside the phone:
-hdc smode root
-hdc shell dd if=/file/to/move of=place/to/move.extension
--
--
-add / remove buildprop hides:
-hdc smode root
-hdc shell
-mount | grep sys_prod
-mount -o remount,rw /sys_prod
-dd if=/sys_prod/etc/param/hw_defaults.para of=/data/hw_defaults.para
-exit
-hdc fille recv /data/hw_defaults.para
-[[edit "hw_defaults.para" and change "const.product.hide = true" to false]]
-hdc file send /path/to/editted.para /sts_prod/etc/param
--
--
-Find what sdd / sdc corresponds to what partition:
-hdc smode root
-hdc shell ls -l /dev/block/by-name
--
--
-mount partition r/w:
-hdc smode root
-hdc shell
-mount | grep *partname*
-mount -o remount,rw /*partname*
+##
+##
+move a file inside the phone: </p>
+hdc smode root </p>
+hdc shell dd if=/file/to/move of=place/to/move.extension </p>
+##
+##
+add / remove buildprop hides: </p>
+hdc smode root </p>
+hdc shell </p>
+mount | grep sys_prod </p>
+mount -o remount,rw /sys_prod </p>
+dd if=/sys_prod/etc/param/hw_defaults.para of=/data/hw_defaults.para </p>
+exit </p>
+hdc fille recv /data/hw_defaults.para </p>
+[[edit "hw_defaults.para" and change "const.product.hide = true" to false]] </p>
+hdc file send /path/to/editted.para /sts_prod/etc/param </p>
+##
+##
+Find what sdd / sdc corresponds to what partition: </p>
+hdc smode root </p>
+hdc shell ls -l /dev/block/by-name </p>
+##
+##
+mount partition r/w: </p>
+hdc smode root </p>
+hdc shell </p>
+mount | grep [partname] </p>
+mount -o remount,rw /[partname] </p>
